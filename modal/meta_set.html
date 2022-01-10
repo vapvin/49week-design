@@ -1,0 +1,63 @@
+<div class="modal meta-set" data-in="fadeIn" data-out="fadeOut" data-speed="faster">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1>사용자 정보 변경</h1>
+            <button class="close"><img src="/css/ico/popup_close_icon.png" alt="popup_close_icon.png"></button>
+        </div>
+        <div class="modal-body">
+            <div class="user_info">
+                <div class="padding_wrap">
+                    <h3 class="input-title pop_ti">필수 정보</h3>
+                    <div class="input-group">
+                        <div class="input-col-3"><label class="input-label"><span class="input-label-name">그룹</span><input type="text" name="group_id"  readonly="readonly"></label></div>
+                        <div class="input-col-3"><label class="input-label"><span class="input-label-name">사용자 ID</span><input type="text" name="user_id"   readonly="readonly"></label></div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-col-3"><label class="input-label"><span class="input-label-name">사용자 이름</span><input type="text" name="user_name" ></label></div>
+                        <div class="input-col-3"><label class="input-label"><span class="input-label-name">패스워드</span><input type="password" name="password" ></label></div>
+                        <div class="input-col-3"><label class="input-label"><span class="input-label-name">패스워드 확인</span><input type="password" name="confirm_password" ></label></div>
+                    </div>
+                    <div class="password_caution">*6~16 자릿수, (‘ “ ￦ | )를 제외하는 특수문자 포함합니다. 영문 그리고 숫자를 반드시 포함해야 하며, 영문은 대소문자를 구분합니다.</div>
+                </div>
+            </div>
+            <div class="user_info">
+                <div class="padding_wrap">
+                    <h3 class="input-title pop_ti">부가 정보</h3>
+                    <div class="input-group">
+                        <div class="input-col-3"><label class="input-label"><span class="input-label-name">부서명</span><input type="text" name="dept_name"></label></div>
+                        <div class="input-col-3"><label class="input-label"><span class="input-label-name">전화번호</span><input type="text" name="phone_number" ></label></div>
+                        <div class="input-col-3"><label class="input-label"><span class="input-label-name">모바일 번호</span><input type="text" name="mobile_number" ></label></div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-full"><label class="input-label"><span class="input-label-name">설명</span><input type="text" name="user_desc" ></label></div>
+                    </div>
+                </div>
+            </div>
+            <div class="user_info user_info_last">
+                <div class="padding_wrap">
+                    <h3 class="input-title pop_ti">초기 접속화면</h3>
+                    <div class="control-group">
+                        <label class="control control-radio input-inline">
+						기본화면
+						<input type="radio" name="initialScreen" value="basic" checked="checked">
+						<div class="control-indicator"></div>
+					</label>
+                        <label class="control control-radio input-inline">
+						사용자정의 대시보드
+						<input type="radio" name="initialScreen" value="ndboard" >
+						<div class="control-indicator"></div>
+					</label>
+                        <label class="control control-radio input-inline">
+						접속화면 지정
+						<input type="radio" name="initialScreen" value="menu" />
+						<div class="control-indicator"></div>
+					</label>
+                        <a class="button button-small" id="initialScreenSave">초기 접속화면 저장</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer"><a class="button button-default btn_point">적용</a></div>
+    </div>
+</div>
+<!-- modal -->

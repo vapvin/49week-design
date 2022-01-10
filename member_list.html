@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="./js/jquery-ui-timepicker-addon/jquery-ui-timepicker-addon.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" type="text/css" media="all">
+    <link rel="stylesheet" href="./js/jquery-ui-timepicker-addon/jquery-ui-timepicker-addon.css" type="text/css" media="all">
+    <link rel="stylesheet" href="./js/pick_me_up/css/pickmeup.css" type="text/css" media="all">
+    <script src="./js/pick_me_up/dist/pickmeup.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/animate.css" type="text/css" media="all">
+    <link rel="stylesheet" href="./css/style.css" type="text/css" media="all">
+    <script src="./js/common.js" async="async"></script>
+    <title>49week - admin</title>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#header").load("header.php");
+        });
+    </script>
+</head>
+
+<body class="8-1-1">
+    <!-- wrap -->
+    <div class="wrap">
+        <!--header-->
+        <header id="header"></header>
+        <!--header-->
+        <!-- content -->
+        <div class="content">
+            <!-- 페이지 타이틀 -->
+            <div class="page-title-bar container">
+                <div class="page-title">
+                    <h1>회원목록</h1>
+                </div>
+                <ul class="breadcrumb">
+                    <li>회원관리</li>
+                    <li class="current-path">회원목록</li>
+                </ul>
+            </div>
+            <!-- 페이지 타이틀 -->
+            <div class="main-dashboard">
+                <div class="container-row mt30 category-main member-main">
+                    <div class="colum-container container sidebar category-sidebar member-sidebar">
+                        <div class="sidebar-content tabs">
+                            <h3>회원목록</h3>
+                            <div id="Target_HW_type" class="tab-content page_side_cont_wrap">
+                                <div class="panel">
+                                    <!-- panel -->
+                                    <div class="panel-big-body-wrap">
+                                        <div id="category-layoutBoard">
+                                            <div class="card-table">
+                                                <table class="type09 type-category type-member">
+                                                    <thead>
+                                                    <tr>
+                                                        <th scope="cols">No.</th>
+                                                        <th scope="cols">ID</th>
+                                                        <th scope="cols">이름</th>
+                                                        <th scope="cols">업체</th>
+                                                        <th scope="cols"></th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="notice-num member-num">4</td>
+                                                        <td>admin@49week.com</td>
+                                                        <td>admin</td>
+                                                        <td>업체1</td>
+                                                        <th scope="row">
+                                                            <button>수정</button>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="notice-num member-num">3</td>
+                                                        <td>member1@naver.com</td>
+                                                        <td>회원1</td>
+                                                        <td>업체1</td>
+                                                        <th scope="row">
+                                                            <button>수정</button>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="notice-num member-num">2</td>
+                                                        <td>member2@gmail.com</td>
+                                                        <td>회원2</td>
+                                                        <td>업체2</td>
+                                                        <th scope="row">
+                                                            <button>수정</button>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="notice-num member-num">1</td>
+                                                        <td>member3@daum.net</td>
+                                                        <td>회원3</td>
+                                                        <td>업체3</td>
+                                                        <th scope="row">
+                                                            <button>수정</button>
+                                                        </th>
+                                                    </tr>
+                                                    
+                                                    </tbody>
+                                                </table>
+                                                <div class="pageingnum">
+                                                    <a href="#" class="pageing">1</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- panel -->
+                            </div>
+                            <!-- .tab-content -->
+    
+                        </div>
+                    </div>
+                    <!-- sidebar -->
+                    <div class="categoyr-wrap">
+                        
+                        <div class="colum-container col_main_board_wrap category_board_wrap notice-admin-wrap member-wrap member-wrap02">
+                            <h3>회원 추가</h3>
+                            <span class="custom-ico arrow_bottom_icon member-close"></span>
+                            <span class="custom-ico arrow_right_icon member-open"></span>
+                            <div class="category-cont">
+                                <div class="category-title">
+                                    <div class="category-titlebox">
+                                        <div class="memberbox">
+                                            <div class="memberid">
+                                                <h4>ID</h4>
+                                                <input type="email" placeholder="ex) 49week@admin.com">
+                                            </div>
+                                            <div class="memberpw">
+                                                <h4>비밀번호</h4>
+                                                <div class="pwbox">
+                                                    <input type="password">
+                                                </div>
+                                                <h4>비밀번호 확인</h4>
+                                                <div class="pwbox">
+                                                    <input type="password">
+                                                </div>
+                                            </div>
+                                            <div class="membername">
+                                                <h4>이름</h4>
+                                                <input type="text">
+                                            </div>
+                                            <div class="membergroup">
+                                                <h4>업체</h4>
+                                                <select name="membergroup-set" id="membergroup-set">
+                                                    <option value="">업체1</option>
+                                                    <option value="">업체2</option>
+                                                    <option value="">업체3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category-btn">
+                                    <button>추가</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="colum-container col_main_board_wrap category_board_wrap notice-admin-wrap member-wrap member-wrap01">
+                            <h3>회원 수정</h3>
+                            <div class="category-cont">
+                                <div class="category-title">
+                                    <div class="category-titlebox">
+                                        <div class="memberbox">
+                                            <div class="memberid">
+                                                <h4>ID</h4>
+                                                <input type="email" placeholder="admin@49week.com">
+                                            </div>
+                                            <div class="memberpw">
+                                                <h4>비밀번호</h4>
+                                                <div class="pwbox">
+                                                    <input type="password" placeholder="*********">
+                                                </div>
+                                                <h4>비밀번호 확인</h4>
+                                                <div class="pwbox">
+                                                    <input type="password" placeholder="*********">
+                                                </div>
+                                            </div>
+                                            <div class="membername">
+                                                <h4>이름</h4>
+                                                <input type="text" placeholder="admin">
+                                            </div>
+                                            <div class="membergroup">
+                                                <h4>업체</h4>
+                                                <select name="membergroup-set" id="membergroup-set">
+                                                    <option value="">업체1</option>
+                                                    <option value="">업체2</option>
+                                                    <option value="">업체3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="category-btn">
+                                    <button>저장</button>
+                                    <button style="background-color: rgb(250, 40, 40); margin-left: 5px;" class="det">삭제</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- colum-container -->
+                </div>
+                <!-- container-row -->
+            </div>
+        </div>
+        <!-- content -->
+    </div>
+    <!-- wrap -->
+    <!-- modal -->
+    <script>
+        $(document).ready(function(){
+            $('.member-close').click(function(){
+                $('.member-close').css({'display':'none'});
+                $('.member-open').css({'display':'block'});
+                $('.member-wrap02').animate({
+                    height : '4vh'
+                });
+            });
+            $('.member-open').click(function(){
+                $('.member-open').css({'display':'none'});
+                $('.member-close').css({'display':'block'});
+                $('.member-wrap02').animate({
+                    height : '28vh'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
