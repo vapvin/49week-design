@@ -35,6 +35,7 @@ html {
     cursor: pointer; 
     display: block; 
     z-index: 9999;
+    font-weight: bold;
 }
 .btn_top:hover{
     color: #393D49;
@@ -94,7 +95,7 @@ header .utill a{
 .contents{
     position: relative; 
     width: 100%; 
-    padding: 0 50px 50px; 
+    padding: 50px 50px; 
     box-sizing: border-box;
 } 
 .over_box{
@@ -110,6 +111,15 @@ header .utill a{
 }
 .over_box:hover{
     opacity: 1;
+}
+.over_box>img{
+    position: absolute; 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+    color: #fff;
+    font-weight: bold;
+    display: none;
 }
 .over_box>p{
     position: absolute; 
@@ -251,15 +261,22 @@ header .utill a{
 }
 .contents .wrap_cnt .wrap_list .inner_list .box_img{
     width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+
 }
 .contents .wrap_cnt .wrap_list .inner_list .box_img img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
 }
 .contents .wrap_cnt .wrap_list .inner_list .title_img{
     padding-top: 10px;
 }
 
-@media screen and (min-width: 701px) and (max-width: 1200px){
+@media screen and (min-width: 751px) and (max-width: 1200px){
     .contents .wrap_cnt .wrap_list .inner_list{
         width: 33%;
     }
@@ -270,7 +287,7 @@ header .utill a{
         color: #fff;
     }
 }
-@media screen and (min-width: 550px) and (max-width: 700px){
+@media screen and (min-width: 550px) and (max-width: 750px){
     header h1{
         margin-left: 30px;
     }
@@ -308,12 +325,12 @@ header .utill a{
         padding: 0 30px 30px;
     } 
     .contents .wrap_cnt .list_title{
-        font-size: 14px;
-        line-height: 50px;
+        font-size: 12px;
         padding: 0;
+        line-height: 20px;
     }
     .contents .wrap_cnt .wrap_title{
-        flex-direction: column;
+        flex-direction: column-reverse;
         margin-left: 0;
         border: 1px solid #ccc; 
         background-color: #fff;
@@ -327,14 +344,26 @@ header .utill a{
     }
     .contents .wrap_cnt .box_checks button{
         margin: 0;
+        font-size: 12px;
+        height: 30px;
+
     }
     .btn_top{
         bottom: 20px; 
         right: 10px; 
         color: #fff; 
+        font-size: 14px;
     }
     .contents .making_date{
+        font-size: 16px;
+        line-height: 40px;
         margin: auto;
+        padding: 0;
+        text-align: right;
+        width: 80%;
+    }
+    .contents .wrap_cnt .wrap_list{
+        padding: 10px 25px;
     }
 }  
 @media screen and (max-width: 350px){
@@ -348,26 +377,49 @@ header .utill a{
         padding: 0 30px 30px;
     } 
     .contents .wrap_cnt .list_title{
-        font-size: 14px;
-        line-height: 50px;
+        font-size: 12px;
         margin: auto;
+        line-height: 20px;
+        padding: 0;
+        padding-right: 10px;
     }
     .contents .wrap_cnt .wrap_title{
         flex-direction: column;
         margin-left: 0;
         width: 100%;
+        flex-direction: column-reverse;
+        margin-left: 0;
+        border: 1px solid #ccc; 
+        background-color: #fff;
+        border-bottom: none;
     }
     .contents .wrap_cnt .box_checks {
-        /* justify-content: space-between; */
+        justify-content: space-between;
         width: 80%;
         margin: auto;
+        border: none;
     }
     .btn_top{
         bottom: 20px; 
         right: 10px; 
         color: #fff;
+        font-size: 12px;
     }
     .contents .wrap_cnt .box_checks button{
         margin-right: 0;
+        height: 30px;
+        font-size: 12px;
+
+    }
+    .contents .making_date{
+        font-size: 14px;
+        line-height: 30px;
+        margin: auto;
+        padding: 0;
+        text-align: right;
+        width: 80%;
+    }
+    .contents .wrap_cnt .wrap_list{
+        padding: 10px 25px;
     }
 }
