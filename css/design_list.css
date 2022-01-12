@@ -141,7 +141,6 @@ header .utill a{
 }
 .contents .wrap_cnt .wrap_title{
     position: relative; 
-
     top: 1px; 
     z-index: 999;
     min-height: 50px;
@@ -330,11 +329,12 @@ header .utill a{
         line-height: 20px;
     }
     .contents .wrap_cnt .wrap_title{
-        flex-direction: column-reverse;
-        margin-left: 0;
+        flex-direction: row;
+        justify-content: space-evenly;
         border: 1px solid #ccc; 
         background-color: #fff;
         border-bottom: none;
+        padding: 0 25px;
     }
     .contents .wrap_cnt .box_checks {
         justify-content: space-between;
@@ -384,14 +384,14 @@ header .utill a{
         padding-right: 10px;
     }
     .contents .wrap_cnt .wrap_title{
-        flex-direction: column;
         margin-left: 0;
         width: 100%;
-        flex-direction: column-reverse;
         margin-left: 0;
         border: 1px solid #ccc; 
         background-color: #fff;
         border-bottom: none;
+        padding: 0 25px;
+
     }
     .contents .wrap_cnt .box_checks {
         justify-content: space-between;
